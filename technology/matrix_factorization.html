@@ -1,111 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="../res/layui/css/layui.css">
-  <link rel="stylesheet" type="text/css" href="../res/css/main.css">
-<!--加载meta IE兼容文件-->
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-<![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../res/lanyu/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/main.css">
+    <!--加载meta IE兼容文件-->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-  <div class="header">
+<div class="header">
     <div class="menu-btn">
-      <div class="menu"></div>
+        <div class="menu"></div>
     </div>
     <h1 class="logo">
-      <a href="index.html">
-        <span>MYBLOG</span>
-        <img src="../res/img/logo.png">
-      </a>
+        <a href="index.html">
+            <span>MYBLOG</span>
+            <img src="../res/img/logo.png">
+        </a>
     </h1>
     <div class="nav">
-      <a href="index.html">文章</a>
-      <a href="whisper.html">微语</a>
-      <a href="leacots.html">留言</a>
-      <a href="album.html">相册</a>
-      <a href="about.html"  class="active">关于</a>
+        <a href="blog/index.html">文章</a>
+        <a href="blog/whisper.html">微语</a>
+        <a href="blog/leacots.html">留言</a>
+        <a href="blog/album.html">相册</a>
+        <a href="blog/about.html" class="active">关于</a>
     </div>
     <ul class="layui-nav header-down-nav">
-      <li class="layui-nav-item"><a href="index.html" class="active">文章</a></li>
-      <li class="layui-nav-item"><a href="whisper.html">微语</a></li>
-      <li class="layui-nav-item"><a href="leacots.html">留言</a></li>
-      <li class="layui-nav-item"><a href="album.html">相册</a></li>
-      <li class="layui-nav-item"><a href="about.html"  class="active">关于</a></li>
+        <li class="layui-nav-item"><a href="index.html" class="active">文章</a></li>
+        <li class="layui-nav-item"><a href="whisper.html">微语</a></li>
+        <li class="layui-nav-item"><a href="leacots.html">留言</a></li>
+        <li class="layui-nav-item"><a href="album.html">相册</a></li>
+        <li class="layui-nav-item"><a href="about.html" class="active">关于</a></li>
     </ul>
     <p class="welcome-text">
-      欢迎来到<span class="name">reverliu</span>的博客~
+        欢迎来到<span class="name">reverliu</span>的博客~
     </p>
-  </div>
+</div>
 
 
-  <div class="content whisper-content leacots-content details-content">
+<div class="content whisper-content leacots-content details-content">
     <div class="cont w1000">
-      <div class="whisper-list">
-        <div class="item-box">
-          <div class="review-version">
-              <div class="form-box">
-                <div class="article-cont">
-                  <h1>推荐算法————基于矩阵分解的推荐算法</h1>
-                  <h2>一、推荐算法概述</h2>
-                  对于推荐系统(Recommend System, RS), 从广义上的理解为：为用户(User)推荐相关的商品(Items)。常用的推荐算法主要有:
-                  <img src="../res/img/wz_img1.jpg">
+        <div class="whisper-list">
+            <div class="item-box">
+                <div class="review-version">
+                    <div class="form-box">
+                        <div class="article-cont">
+                            <h1><b>推荐算法————基于矩阵分解的推荐算法</b></h1>
+                        </div>
+                    </div>
                 </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div id="demo" style="text-align: center;"></div>
+        <div class="whisper-content">
+            <div class="cont-text item-box">
+                <h2><b>一、推荐算法概述</b></h2>
+            </div>
+            <div class="layui-row item-box">
+                <h3>对于推荐系统(Recommend System，RS), 从广义上的理解为：为用户(User)推荐相关的商品(Items)。</h3>
+                <h3>常用的推荐算法主要有:</h3>
+            </div>
+            <div class="layui-row item-box">
+                <h3>基于内容的推荐(Content-Based Recommendation)</h3>
+                <h3>协同过滤的推荐(Collaborative Filtering Recommendation)</h3>
+                <h3>基于关联规则的推荐(Association Rule-Based Recommendation)</h3>
+                <h3>基于效用的推荐(Utility-Based Recommendation)</h3>
+                <h3>基于知识的推荐(Knowledge-Based Recommendation)</h3>
+                <h3>组合的推荐(Hybrid Recommendation)</h3>
+            </div>
+            <div class="layui-row item-box">
+                <h3>在推荐系统中，最重要的数据是用户对商品的打分数据，数据形式如下所示：</h3>
+            </div>
+            <img src="img/5ubul7s2ce.jpeg"/>
+            <img src="img/kt4bwct69f.png"/>
+
+            <div class="cont-text item-box">
+                <h2><b>二、基于矩阵分解的推荐算法</b></h2>
+            </div>
+            <div class="layui-row item-box">
+                <h3><b>2.1、矩阵分解的一般形式</b></h3>
+            </div>
+            <div class="layui-row item-box">
+                <img src="img/hqkjaz8htw.png"/>
+            </div>
+            <div class="layui-row item-box">
+                <h3><b>2.2、利用矩阵分解进行预测</b></h3>
+            </div>
+            <div class="layui-row item-box">
+                <img src="img/meyjcvabgz.png"/>
+            </div>
+            <div class="layui-row item-box">
+                <h4><b>2.2.1、损失函数</b></h4>
+            </div>
+            <div class="layui-row item-box">
+                <img src="img/moxgoayjb3.png"/>
+            </div>
+            <div class="layui-row item-box">
+                <h4><b>2.2.2、损失函数的求解</b></h4>
+            </div>
+            <div class="layui-row item-box">
+                <img src="img/vec01l2p7n.png"/>
+            </div>
+            <div class="layui-row item-box">
+                <h4><b>2.2.3、加入正则项的损失函数即求解方法</b></h4>
+            </div>
+            <div class="layui-row item-box">
+                <img src="img/z6ef7tgkmw.png"/>
+            </div>
+            <div class="layui-row item-box">
+                <h4><b>2.2.4、预测</b></h4>
+            </div>
+            <div class="layui-row item-box">
+                <img src="img/n1szp94isu.png"/>
+            </div>
+            <div class="layui-row item-box">
+                <h3><b>2.3、程序实现</b></h3>
+            </div>
+            <div class="layui-row item-box">
+                <h3>对于上述的评分矩阵，通过矩阵分解的方法对其未打分项进行预测，最终的结果为:</h3>
+            </div>
+            <div class="layui-row item-box">
+                <img src="img/emjbtt58bs.jpeg"/>
+            </div>
+            <div class="layui-row item-box">
+                <h3>程序代码如下:</h3>
+            </div>
+            <div class="layui-row item-box">
+                <a href="../code/matrix_factorization_1.py"><h3><font color="red">代码_1链接</font></h3></a>
+            </div>
+            <div class="layui-row item-box">
+                <h3>其中，利用梯度下降法进行矩阵分解的过程中的收敛曲线如下所示:</h3>
+            </div>
+            <div class="layui-row item-box">
+                <img src="img/y0j0hrnscj.png"/>
+            </div>
+            <div class="layui-row item-box">
+                <a href="../code/matrix_factorization_2.py"><h3><font color="red">代码_2链接</font></h3></a>
+            </div>
+            <div class="layui-row item-box">
+                <h2>参考文献:</h2>
+            </div>
+            <div class="layui-row item-box">
+                <h3>《大数据智能》</h3>
+            </div>
+            <div class="layui-row item-box">
+                <h3>
+                    <a href="http://www.quuxlabs.com/blog/2010/09/matrix-factorization-a-simple-tutorial-and-implementation-in-python/">
+                        <font color="blue">Matrix factorization: A Simple Tutorial and Implementation in Python</font>
+                    </a></h3>
+            </div>
+        </div>
     </div>
-  </div>
-  <script type="text/html" id="laytplCont">
+
+</div>
+<script type="text/html" id="laytplCont">
     <div class="cont">
-      <div class="img">
-        {{#  if(d.avatar){ }}
-        <img src="{{d.avatar}}" alt="">
-        {{#  } else { }}
-        <img src="../res/img/header.png" alt="">
-        {{# } }}
-      </div>
-      <div class="text">
-        <p class="tit"><span class="name">{{d.name}}</span><span class="data">2018/06/06</span></p>
-        <p class="ct">{{d.cont}}</p>
-      </div>
-    </div>
-  </script>
-  <div class="footer-wrap">
-    <div class="footer w1000">
-      <div class="qrcode">
-        <img src="../res/img/erweima.jpg">
-      </div>
-      <div class="practice-mode">
-        <img src="../res/img/down_img.jpg">
-        <div class="text">
-          <h4 class="title">我的联系方式</h4>
-          <p>微信<span class="WeChat">1234567890</span></p>
-          <p>手机<span class="iphone">1234567890</span></p>
-          <p>邮箱<span class="email">1234567890@qq.com</span></p>
+        <div class="img">
+            {{# if(d.avatar){ }}
+            <img src="{{d.avatar}}" alt="">
+            {{# } else { }}
+            <img src="../res/img/header.png" alt="">
+            {{# } }}
         </div>
-      </div>
+        <div class="text">
+            <p class="tit"><span class="name">{{d.name}}</span><span class="data">2018/06/06</span></p>
+            <p class="ct">{{d.cont}}</p>
+        </div>
     </div>
-  </div>
-  <script type="text/javascript" src="../res/layui/layui.js"></script>
-  <script type="text/javascript">
+</script>
+<div class="footer-wrap">
+    <div class="footer w1000">
+        <div class="qrcode">
+            <img src="../res/img/erweima.jpg">
+        </div>
+        <div class="practice-mode">
+            <img src="../res/img/down_img.jpg">
+            <div class="text">
+                <h4 class="title">我的联系方式</h4>
+                <p>微信<span class="WeChat">1234567890</span></p>
+                <p>手机<span class="iphone">1234567890</span></p>
+                <p>邮箱<span class="email">1234567890@qq.com</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../res/lanyu/layui.js"></script>
+<script type="text/javascript">
     layui.config({
-      base: '../res/js/util/'
-    }).use(['element','laypage','form','menu'],function(){
-      element = layui.element,laypage = layui.laypage,form = layui.form,menu = layui.menu;
-      laypage.render({
-        elem: 'demo'
-        ,count: 70 //数据总数，从服务端得到
-      });
-      menu.init();
-      menu.submit();
+        base: '../res/js/util/'
+    }).use(['element', 'laypage', 'form', 'menu'], function () {
+        element = layui.element, laypage = layui.laypage, form = layui.form, menu = layui.menu;
+        laypage.render({
+            elem: 'demo'
+            , count: 70 //数据总数，从服务端得到
+        });
+        menu.init();
+        menu.submit();
     })
-  </script>
+</script>
 </body>
 </html>
